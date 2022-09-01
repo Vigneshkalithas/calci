@@ -1,0 +1,187 @@
+:root {
+    --box-radius:10px;
+    /* --white: #ffffff; */
+  }
+
+  *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background-color: hsla(206°, 23%, 94%);
+    outline:none;
+}
+
+body{
+    background-color: #3B4664;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.card{
+    width:450px;
+    height: 500px;
+    /* border: 2px solid white; */
+    border-radius: var(--box-radius);
+}
+.input-box{
+    width: 450px;
+    height: 100px;
+    background-color: #181F32;
+    border-radius: var(--box-radius);
+    border: none;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: right;
+    padding: 1rem;
+}
+::placeholder{
+    color: white;
+}
+
+.btn-head{
+    width: 450px;
+    height:380px;
+    background-color: #252D44;
+    margin-top: 20px;
+    border-radius: var(--box-radius);
+
+    
+}
+
+button{
+    
+    border:none;
+    height:40px;
+    width:65px;
+    margin:8px;
+    font-size:25px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    background-color: #EAE3DB;
+    border-radius: 5px;
+    color: #4E525E;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    
+    /* -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black; */
+}
+
+button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    /* transform: translateY(-5px); */
+  }
+  button:active {
+    background-color: #EAE3DB;;
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(4px);
+  }
+.calculator-keys{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+  padding: 25px;
+  margin-left: 10px;
+}
+
+
+.calculator-keys button:nth-child(4)  {
+    background-color: #64719B;
+    color: white;
+    font-size: 17px;
+  }
+ 
+
+ .d-flex{
+display: flex;
+ }
+
+ .reset , .eqaul-button{
+    width: 150px;
+    height: 47px;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+
+ }
+
+ .reset{
+    background-color: #64719B;
+    margin:-17px 30px 0px 39px;
+ }
+ .eqaul-button{
+    background-color:#D13F30;
+    margin:-17px 25px 0px 33px;
+ }
+
+ @media only screen and (max-width: 500px) {
+  .card{
+    width:330px;
+    height:450px;
+    
+    border-radius: var(--box-radius);
+}
+.input-box{
+  width: 330px;
+  height: 70px;
+  background-color: #181F32;
+  border-radius: var(--box-radius);
+  border: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: right;
+  padding: 1.5rem;
+}
+.btn-head{
+  width: 330px;
+  height:350px;
+  background-color: #252D44;
+  margin-top: 20px;
+  border-radius: var(--box-radius);
+
+  
+}
+button{
+    
+  border:none;
+  height:30px;
+  width:45px;
+  margin:8px;
+  font-size:25px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  background-color: #EAE3DB;
+  border-radius: 5px;
+  color: #4E525E;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  
+ 
+}
+.reset , .eqaul-button{
+  width: 100px;
+  height: 35px;
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+
+}
+.reset{
+  background-color: #64719B;
+  margin:0px 29px 0px 39px;
+}
+.eqaul-button{
+  background-color:#D13F30;
+  margin:0px 15px 0px 33px;
+}
+ }
